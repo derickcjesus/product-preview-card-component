@@ -16,52 +16,52 @@ body {
     background-color: hsl(0, 0%, 100%);
   }
 
-  .left-component img {
+  section .image-product {
     object-fit: cover;
     width: 100%;
     height: 255px;
     border-radius: 10px 10px 0 0;
   }
 
-  .right-components {
+  .components {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: 18px;
   }
 
-  .right-components h4 {
+  .components h4 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     letter-spacing: 5px;
-    font-size: 16px;
+    font-size: 1em;
     color: hsl(228, 12%, 48%);
   }
 
-  .right-components h1 {
+  .components h1 {
     font-family: "Fraunces", serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
   }
 
-  .right-components p {
+  .components p {
     font-family: "Montserrat", sans-serif;
     line-height: 1.4;
     color: hsl(228, 12%, 48%);
-  }
-
-  .price span {
-    font-size: 16px;
-    text-decoration: line-through;
-    color: hsl(228, 12%, 48%);
-    padding-left: 8px;
   }
 
   .price {
     color: hsl(158, 36%, 37%);
   }
 
-  .right-components button {
+  .price span {
+    font-size: 0.6em;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    padding-left: 8px;
+  }
+
+  .components button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ body {
     color: hsl(0, 0%, 100%);
   }
 
-  .right-components button img {
+  .components button .icon-cart {
     margin-right: 7px;
   }
 }
@@ -83,11 +83,42 @@ body {
 @media (min-width: 1440px) {
   .card {
     display: flex;
-    width: 70%;
+    width: initial;
   }
-  /*
-  .pleft-component img {
-    object-fit: fill;
-    width: 100%;
-  }*/
+
+  section .image-product {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .components {
+    width: 450px;
+    margin: 50px;
+    justify-content: space-evenly;
+  }
+
+  .components h4 {
+    font-size: 1.8em;
+  }
+
+  .components h1 {
+    font-size: 4em;
+  }
+
+  .components p {
+    font-size: 2em;
+  }
+
+  .price span {
+    font-size: 0.4em;
+  }
+
+  .components button {
+    height: 3.5em;
+    font-size: 1.5em;
+  }
+
+  .components button .icon-cart {
+    width: 1em;
+  }
 }
