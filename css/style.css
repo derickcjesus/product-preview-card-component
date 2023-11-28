@@ -116,6 +116,11 @@ body {
   .components button {
     height: 3.5em;
     font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .components button:hover {
+    background-color: hsl(158, 20%, 37%);
   }
 
   .components button .icon-cart {
